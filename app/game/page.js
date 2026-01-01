@@ -1,23 +1,11 @@
 "use client";
-import { useSearchParams } from "next/navigation";
 
 export default function GamePage() {
-  const params = useSearchParams();
-  const score = params.get("score");
-
   return (
-    <>
-      {score && (
-        <div style={styles.score}>
-          🏆 Điểm của tôi: <b>{score}</b>
-        </div>
-      )}
-
-      <iframe
-        src="/game.html"
-        style={{ width: "100vw", height: "100vh", border: "none" }}
-      />
-    </>
+    <iframe
+      src="/game.html"
+      style={{ width: "100vw", height: "100vh", border: "none" }}
+    />
   );
 }
 
