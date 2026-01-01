@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="CircleSurvival 3D - A thrilling endless survival game. Avoid enemies, defeat bosses, collect power-ups, and survive as long as you can!">
+<meta name="keywords" content="CircleSurvival 3D, online game, HTML5 game, endless runner, survival, browser game">
+<meta name="author" content="vantrilove4">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="CircleSurvival 3D">
+<meta property="og:description" content="Play CircleSurvival 3D! Avoid enemies, defeat bosses, collect power-ups, and challenge your friends.">
+<meta property="og:image" content="https://yourdomain.com/thumbnail.png"> <!-- replace with your image -->
+<meta property="og:url" content="https://yourdomain.com"> <!-- replace with your live URL -->
+<meta property="og:site_name" content="CircleSurvival 3D">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CircleSurvival 3D">
+<meta name="twitter:description" content="Play CircleSurvival 3D! Avoid enemies, defeat bosses, collect power-ups, and challenge your friends.">
+<meta name="twitter:image" content="https://yourdomain.com/thumbnail.png"> <!-- replace with your image -->
+<meta name="twitter:site" content="@yourtwitterhandle"> <!-- optional -->
+
+<!-- Mobile & PWA -->
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>CircleSurvival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <div id="game-wrapper">
+    <canvas id="game"></canvas>
+    <div id="menu" class="menu">
+      <h2>CircleSurvival</h2>
+      <button onclick="startGame()">▶ Bắt đầu</button>
+    </div>
+  </div>
+  <div id="guide">
+  <h3>How to Play</h3>
+  <ul>
+    <li>Move the character using your mouse, touch, or joystick (on mobile).</li>
+    <li>Eat <span style="color:#ffd700;">gold orbs</span> to gain points.</li>
+    <li>Every 5 levels, a <span style="color:crimson;">Boss</span> appears. Eating boss orbs shoots at the Boss.</li>
+    <li>Avoid <span style="color:#ff4444;">red triangle enemies</span>.</li>
+    <li>Every 3 levels, the number of enemies increases. Every 5 levels, enemies move faster.</li>
+    <li>Power-ups appear every 10 seconds at random positions:
+      <ul>
+        <li><span style="color:#0ff;">Freeze (blue)</span> – freezes all enemies and the boss for 5 seconds.</li>
+        <li><span style="color:#ff0;">Kill (yellow)</span> – instantly removes one enemy.</li>
+        <li><span style="color:#ff69b4;">Super (pink)</span> – turn into Super mode for 3 seconds; touching enemies destroys them.</li>
+      </ul>
+    </li>
+    <li>The game ends if you touch an enemy or the Boss.</li>
+    <li>Your score, level, and survival time are displayed when the game is over.</li>
+    <li>You can share your score on Facebook after losing.</li>
+    <br>
+    <br>
+    <h3 style="color: red;">This game made by TriNguyen</h3>
+  </ul>
+</div>
+</div>
+<div id="joystick-base">
+  <div id="joystick-stick"></div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
